@@ -1,0 +1,10 @@
+alg,group_type,group_size,AR_avg,AR_min,AR_min/max,AR_std,nDCG_avg,nDCG_min,nDCG_min/max,nDCG_std
+mf_230_1.0_avg_sim_group_8,sim,8,0.512,0.509,0.985,0.003,47.577,44.38,0.869,2.119
+mf_230_1.0_avg_sim_group_8_GFAR_1.0,sim,8,0.747,0.662,0.795,0.055,0.649,0.555,0.75,0.06
+mf_230_1.0_avg_sim_group_8_GreedyLM_1.0,sim,8,0.779,0.704,0.818,0.05,0.676,0.603,0.808,0.046
+mf_230_1.0_avg20_sim_group_8,sim,8,0.794,0.688,0.763,0.069,0.687,0.591,0.761,0.06
+mf_230_1.0_fai_sim_group_8,sim,8,0.708,0.639,0.82,0.045,0.603,0.526,0.769,0.051
+mf_230_1.0_avg_sim_group_8_FuzzyDHondtDirectOptimize_1.0,sim,8,0.78,0.751,0.93,0.017,0.676,0.626,0.862,0.032
+mf_230_1.0_avg_sim_group_8_SPGreedy_1.0,sim,8,0.773,0.684,0.79,0.058,0.657,0.575,0.781,0.052
+mf_230_1.0_xpo_sim_group_8,sim,8,0.75,0.661,0.787,0.057,0.648,0.555,0.751,0.059
+mf_230_1.0_avg_sim_group_8_FuzzyDHondt_1.0,sim,8,0.793,0.72,0.832,0.047,0.686,0.615,0.816,0.045

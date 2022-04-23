@@ -1,0 +1,17 @@
+alg,group_type,group_size,AR_avg,AR_min,AR_min/max,AR_std,nDCG_avg,nDCG_min,nDCG_min/max,nDCG_std
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizeRelu0.5_1.0,div,2,1.033,0.96,0.872,0.073,0.858,0.8,0.876,0.058
+mf_30_1.0_avg_div_group_2_SPGreedy_1.0,div,2,1.046,0.966,0.861,0.08,0.86,0.808,0.889,0.051
+mf_30_1.0_avg_div_group_2_GreedyLM_1.0,div,2,1.036,0.999,0.933,0.036,0.859,0.843,0.964,0.016
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimize_1.0,div,2,1.033,0.96,0.872,0.073,0.858,0.8,0.876,0.058
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizeLimit4.0_1.0,div,2,1.045,0.958,0.851,0.087,0.859,0.791,0.856,0.068
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizeExcessMul0.2_1.0,div,2,1.04,0.976,0.887,0.064,0.864,0.814,0.892,0.05
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizeConstDec4_1.0,div,2,1.033,0.96,0.872,0.073,0.858,0.8,0.876,0.058
+mf_30_1.0_avg_div_group_2_FuzzyDHondt_1.0,div,2,1.033,0.946,0.849,0.087,0.856,0.795,0.868,0.061
+mf_30_1.0_avg_div_group_2_GFAR_1.0,div,2,1.009,0.976,0.936,0.034,0.836,0.819,0.961,0.017
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizePosDiscount_1.0,div,2,1.03,0.949,0.859,0.081,0.856,0.79,0.861,0.065
+mf_30_1.0_xpo_div_group_2,div,2,1.01,0.976,0.936,0.034,0.815,0.789,0.939,0.026
+mf_30_1.0_fai_div_group_2,div,2,1.008,0.974,0.936,0.034,0.829,0.807,0.95,0.022
+mf_30_1.0_avg_div_group_2_pref_AVG,div,2,1.024,0.884,0.765,0.14,0.847,0.732,0.765,0.115
+mf_30_1.0_avg_div_group_2_AVG,div,2,1.046,0.958,0.849,0.088,0.866,0.806,0.871,0.061
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizeRelu0.125_1.0,div,2,1.033,0.96,0.872,0.073,0.858,0.8,0.876,0.058
+mf_30_1.0_avg_div_group_2_FuzzyDHondtDirectOptimizeConstDec3.5_1.0,div,2,1.033,0.96,0.872,0.073,0.858,0.8,0.876,0.058
