@@ -24,6 +24,9 @@ against the polarity bias.
 - [ml1m](./ml1m/) folder contains everything related to evaluation on ML1M dataset
     - 
 - [kgrec](./kgrec/) folder contains everything related to evaluation on KGREC dataset
+- [evaluation_notebook](./evaluation_notebook/) folder contains jupyter notebook that was used to generate plots used in the paper
+    - [aggregated results](./evaluation_notebook/aggregated/) contains all the plots aggregated (average) over all parameter combinations
+    - [results](./evaluation_notebook/img_max/) contains resulting plots for all the combinations
 
 ### Requirements
 Having all the data in the format produced by https://github.com/LadislavMalecek/UMAP2021
