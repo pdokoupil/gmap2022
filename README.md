@@ -22,11 +22,18 @@ against the polarity bias.
 
 ### Project structure
 - [ml1m](./ml1m/) folder contains everything related to evaluation on ML1M dataset
-    - 
+    - [results](./ml1m/results/) folder contains all the results produced by [ml1m/compute_metrics_aggregatedResults.py](./ml1m/compute_metrics_aggregatedResults.py) script (same as [evaluation_notebook/results_ml1m](./evaluation_notebook/results_ml1m/)).
+    - [data](./ml1m/data/) contains input data for compute_metrics_aggregatedResults.py which produced the abovementioned results. The input data can be obtained by running code from https://github.com/LadislavMalecek/UMAP2021 repository (was ommitted in this repository because of storage constraints). The expected format of the [data](./ml1m/data/) folder (in the case you need to run it to re-generate the [results](./ml1m/results/) directory) is following:
+        - TODO
 - [kgrec](./kgrec/) folder contains everything related to evaluation on KGREC dataset
+    - [results](./kgrec/results/) folder contains all the results produced by [kgrec/compute_metrics_aggregatedResults.py](./kgrec/compute_metrics_aggregatedResults.py) script (same as [evaluation_notebook/results_kgrec](./evaluation_notebook/results_kgrec/)).
+    - [data](./kgrec/data/) contains input data for compute_metrics_aggregatedResults.py which produced the abovementioned results. The input data can be obtained by running code from https://github.com/LadislavMalecek/UMAP2021 repository (was ommitted in this repository because of storage constraints). The expected format of the [data](./kgrec/data/) folder (in the case you need to run it to re-generate the [results](./kgrec/results/) directory) is following:
+        - TODO
 - [evaluation_notebook](./evaluation_notebook/) folder contains jupyter notebook that was used to generate plots used in the paper
-    - [aggregated results](./evaluation_notebook/aggregated/) contains all the plots aggregated (average) over all parameter combinations
-    - [results](./evaluation_notebook/img_max/) contains resulting plots for all the combinations
+    - [aggregated](./evaluation_notebook/aggregated/) contains all the plots aggregated (average) over all parameter combinations
+    - [img_max](./evaluation_notebook/img_max/) contains resulting plots for all the combinations
+    - [results_kgrec](./evaluation_notebook/results_kgrec/) contains all raw results that were produced using [kgrec/compute_metrics_aggregatedResults.py](./kgrec/compute_metrics_aggregatedResults.py) script.
+    - [results_ml1m](./evaluation_notebook/results_ml1m/) contains all raw results that were produced using [ml1m/compute_metrics_aggregatedResults.py](./ml1m/compute_metrics_aggregatedResults.py) script.    
 
 ### Requirements
 Having all the data in the format produced by https://github.com/LadislavMalecek/UMAP2021
