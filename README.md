@@ -97,8 +97,8 @@ against the polarity bias.
                 - [8](./kgrec/data/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
 
 - [evaluation_notebook](./evaluation_notebook/) folder contains jupyter notebook that was used to generate plots used in the paper
-    - [aggregated](./evaluation_notebook/aggregated/) contains all the plots aggregated (average) over all parameter combinations
-    - [img_max](./evaluation_notebook/img_max/) contains resulting plots for all the combinations
+    - [result_plots_aggregated](./evaluation_notebook/result_plots_aggregated/) contains all the plots aggregated (average) over all parameter combinations
+    - [result_plots](./evaluation_notebook/result_plots/) contains resulting plots for all the combinations
     - [results_kgrec](./evaluation_notebook/results_kgrec/) contains all raw results that were produced using [kgrec/compute_metrics_aggregatedResults.py](./kgrec/compute_metrics_aggregatedResults.py) script.
     - [results_ml1m](./evaluation_notebook/results_ml1m/) contains all raw results that were produced using [ml1m/compute_metrics_aggregatedResults.py](./ml1m/compute_metrics_aggregatedResults.py) script.    
 
