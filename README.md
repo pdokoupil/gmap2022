@@ -23,12 +23,79 @@ against the polarity bias.
 ### Project structure
 - [ml1m](./ml1m/) folder contains everything related to evaluation on ML1M dataset
     - [results](./ml1m/results/) folder contains all the results produced by [ml1m/compute_metrics_aggregatedResults.py](./ml1m/compute_metrics_aggregatedResults.py) script (same as [evaluation_notebook/results_ml1m](./evaluation_notebook/results_ml1m/)).
-    - [data](./ml1m/data/) contains input data for compute_metrics_aggregatedResults.py which produced the abovementioned results. The input data can be obtained by running code from https://github.com/LadislavMalecek/UMAP2021 repository (was ommitted in this repository because of storage constraints). The expected format of the [data](./ml1m/data/) folder (in the case you need to run it to re-generate the [results](./ml1m/results/) directory) is following:
-        - TODO
+    - [data](./ml1m/data/) contains input data for compute_metrics_aggregatedResults.py which produced the abovementioned results. The input data can be obtained by running code from https://github.com/LadislavMalecek/UMAP2021 repository (was ommitted in this repository because of storage constraints). The expected format of the [data](./ml1m/data/) folder (**typically you do not need it** unless you want to re-generate and reproduce the [results](./ml1m/results/) directory) is following:
+        - [ml1m](./ml1m/data/ml1m/)
+            - `sim_group_2` - file containing definition of similar group with size 2
+            - `sim_group_4`- file containing definition of similar group with size 4
+            - `sim_group_8` - file containing definition of similar group with size 8
+            - [1](./ml1m/data/ml1m/1) - contains data for 1. fold
+                - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+                - [sim](./ml1m/data/ml1m/1/sim)
+                    - [2](./ml1m/data/ml1m/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                    - [4](./ml1m/data/ml1m/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                    - [8](./ml1m/data/ml1m/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+            - [2](./ml1m/data/ml1m/2) - contains data for 2. fold
+                - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+                - [sim](./ml1m/data/ml1m/1/sim)
+                    - [2](./ml1m/data/ml1m/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                    - [4](./ml1m/data/ml1m/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                    - [8](./ml1m/data/ml1m/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+            - [3](./ml1m/data/ml1m/3) - contains data for 3. fold
+                - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+                - [sim](./ml1m/data/ml1m/1/sim)
+                    - [2](./ml1m/data/ml1m/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                    - [4](./ml1m/data/ml1m/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                    - [8](./ml1m/data/ml1m/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+            - [4](./ml1m/data/ml1m/4) - contains data for 4. fold
+                - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+                - [sim](./ml1m/data/ml1m/1/sim)
+                    - [2](./ml1m/data/ml1m/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                    - [4](./ml1m/data/ml1m/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                    - [8](./ml1m/data/ml1m/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+            - [5](./ml1m/data/ml1m/5) - contains data for 5. fold
+                - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+                - [sim](./ml1m/data/ml1m/1/sim)
+                    - [2](./ml1m/data/ml1m/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                    - [4](./ml1m/data/ml1m/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                    - [8](./ml1m/data/ml1m/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+
 - [kgrec](./kgrec/) folder contains everything related to evaluation on KGREC dataset
     - [results](./kgrec/results/) folder contains all the results produced by [kgrec/compute_metrics_aggregatedResults.py](./kgrec/compute_metrics_aggregatedResults.py) script (same as [evaluation_notebook/results_kgrec](./evaluation_notebook/results_kgrec/)).
-    - [data](./kgrec/data/) contains input data for compute_metrics_aggregatedResults.py which produced the abovementioned results. The input data can be obtained by running code from https://github.com/LadislavMalecek/UMAP2021 repository (was ommitted in this repository because of storage constraints). The expected format of the [data](./kgrec/data/) folder (in the case you need to run it to re-generate the [results](./kgrec/results/) directory) is following:
-        - TODO
+    - [data](./kgrec/data/) contains input data for compute_metrics_aggregatedResults.py which produced the abovementioned results. The input data can be obtained by running code from https://github.com/LadislavMalecek/UMAP2021 repository (was ommitted in this repository because of storage constraints). The expected format of the [data](./kgrec/data/) folder (**typically you do not need it** unless you want to re-generate and reproduce the [results](./kgrec/results/) directory) is following:
+        - `sim_group_2` - file containing definition of similar group with size 2
+        - `sim_group_4` - file containing definition of similar group with size 4
+        - `sim_group_8` - file containing definition of similar group with size 8
+        - [1](./kgrec/data/1) - contains data for 1. fold
+            - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+            - [sim](./kgrec/data/1/sim)
+                - [2](./kgrec/data/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                - [4](./kgrec/data/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                - [8](./kgrec/data/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+        - [2](./kgrec/data/2) - contains data for 2. fold
+            - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+            - [sim](./kgrec/data/1/sim)
+                - [2](./kgrec/data/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                - [4](./kgrec/data/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                - [8](./kgrec/data/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+        - [3](./kgrec/data/3) - contains data for 3. fold
+            - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+            - [sim](./kgrec/data/1/sim)
+                - [2](./kgrec/data/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                - [4](./kgrec/data/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                - [8](./kgrec/data/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+        - [4](./kgrec/data/4) - contains data for 4. fold
+            - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+            - [sim](./kgrec/data/1/sim)
+                - [2](./kgrec/data/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                - [4](./kgrec/data/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                - [8](./kgrec/data/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+        - [5](./kgrec/data/5) - contains data for 5. fold
+            - `mf_data.npy` - output of ALS matrix factorization for the given fold (2D numpy array users x items with float preferences)
+            - [sim](./kgrec/data/1/sim)
+                - [2](./kgrec/data/1/sim/2) - contains files with final top-k predictions for similar groups with size 2. One file per GRS algorithm.
+                - [4](./kgrec/data/1/sim/4) - contains files with final top-k predictions for similar groups with size 4. One file per GRS algorithm.
+                - [8](./kgrec/data/1/sim/8) - contains files with final top-k predictions for similar groups with size 8. One file per GRS algorithm.
+
 - [evaluation_notebook](./evaluation_notebook/) folder contains jupyter notebook that was used to generate plots used in the paper
     - [aggregated](./evaluation_notebook/aggregated/) contains all the plots aggregated (average) over all parameter combinations
     - [img_max](./evaluation_notebook/img_max/) contains resulting plots for all the combinations
